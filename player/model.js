@@ -8,6 +8,10 @@ const Player = db.define(
         name: {
             type: Sequelize.STRING,
             allowNull: false
+        },
+        score: {
+            type: Sequelize.INTEGER,
+            defaultValue: 0
         }
     }, {
         timestamps: false,

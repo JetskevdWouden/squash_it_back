@@ -5,6 +5,10 @@ const cors = require('cors');
 const db = require('./db');
 
 //DB - MODELS
+const Player = require('./player/model');
+const Game = require('./game/model');
+const Squasher = require('./squasher/model');
+const Item = require('./item/model');
 
 //DB - ROUTERS
 
