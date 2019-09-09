@@ -8,6 +8,10 @@ const Item = db.define(
             type: Sequelize.STRING,
             allowNull: false
         },
+        image: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
         failValue: {
             type: Sequelize.INTEGER,
             allowNull: false
@@ -17,9 +21,9 @@ const Item = db.define(
             defaultValue: 0
         }
     }, {
-        timestamps: false,
-        tableName: 'items'
-    }
+    timestamps: false,
+    tableName: 'items'
+}
 )
 
 module.exports = Item;
